@@ -72,6 +72,7 @@ contract TaskNetwork is ReentrancyGuard {
     event RewardPoolFunded(uint256 indexed taskId, uint256 amount);
 
     // Constructor
+    // This constructor is for example purposes, tasks should come from msg.sender
     constructor(address _usdc) {
         usdc = IERC20(_usdc);
         // Initialize tasks
